@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="favi.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f23bc53c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Space BrixX</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        Welcome to
+        <strong
+          >Space <span class="b">B</span><span class="r">r</span
+          ><span class="i">i</span><span class="x">x</span
+          ><span class="X">X</span>!</strong
+        >
+      </h1>
+
+      <div class="description">
+        <h3 class="subtitle">How to Play:</h3>
+        <br />
+        <p>
+          Gather as many points as possible by pressing your
+          <span class="arrowLeft"
+            ><i class="far fa-caret-square-left"></i
+          ></span>
+          and
+          <span class="arrowRight"
+            ><i class="far fa-caret-square-right"></i
+          ></span>
+          button to move the colored brixXs. Match the color of the BrixX with
+          the color of the planet to get points! You have 30 seconds time!
+        </p>
+        <br />
+        <h3 class="legend">Legend:</h3>
+        <br />
+        <div class="mid">
+          <div class="planets">
+            <ul style="list-style-type: none">
+              <li>
+                <img src="yellowBox.png" height="60px" width="60px" /> =
+                <img src="saturn.png" />
+              </li>
+              <li>
+                <img src="redBox.png" height="60px" width="60px" /> =
+                <img src="mars.png" />
+              </li>
+              <li>
+                <img src="blueBox.png" height="60px" width="60px" /> =
+                <img src="neptune.png" />
+              </li>
+              <li>
+                <img src="greenBox.png" height="60px" width="60px" /> =
+                <img src="earth.png" />
+              </li>
+              <li>
+                <img src="orangeBox.png" height="60px" width="60px" /> =
+                <img src="venus.png" />
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul style="list-style-type: none">
+              <li id="timeArea"></li>
+              <li id="scoreArea"></li>
+              <li id="highscoreArea"></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <p class="callToAction">Can you beat the record?</p>
+        <br />
+        <div class="buttons">
+          <button id="resetButton" onclick="reset()">Reset Game!</button><br />
+          <button id="startButton">Start Game!</button>
+        </div>
+      </div>
+    </div>
+    <audio id="pointSoundMars"><source src="pointMars.mp3" /></audio>
+    <audio id="pointSoundEarth"><source src="pointEarth.mp3" /></audio>
+    <audio id="pointSoundVenus"><source src="pointVenus.mp3" /></audio>
+    <audio id="pointSoundSaturn"><source src="pointSaturn.mp3" /></audio>
+    <audio id="pointSoundNeptune"><source src="pointNeptune.mp3" /></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
